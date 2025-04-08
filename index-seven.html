@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo.png">
+    <title>مجتمع المبدعين</title>
+    <!-- swiper css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/swiper.min.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- magnific popup css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/magnific-popup.css" as="style">
+    <!-- metismenu css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/metismenu.css" as="style">
+    <!-- bootstrap css -->
+    <link rel="stylesheet preload" href="assets/css/vendor/bootstrap.min.css" as="style">
+    <!-- fontawesome css -->
+    <link rel="stylesheet preload" href="assets/css/plugins/fontawesome.min.css" as="style">
+    <link rel="stylesheet preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+
+    <style>
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slider {
+            height: 500px;
+        }
+
+        .slide-content {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 80px;
+            position: relative;
+        }
+
+        .slide-overlay {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+            z-index: 1;
+        }
+
+        .slide-text {
+            position: relative;
+            z-index: 2;
+            max-width: 500px;
+            text-align: right;
+        }
+
+        .slide-text h2,
+        .slide-text p {
+            color: black;
+        }
+
+        .custom-pagination {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 3;
+        }
+
+        .custom-pagination li {
+            list-style: none;
+        }
+
+        .custom-pagination li button {
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .custom-pagination li.active button {
+            background: white;
+            color: black;
+        }
+
+        
+.all {
+    position: relative;
+    transition: .5s;
+    border-radius: 8px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.all img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.all:hover .services_text {
+    height: 100%;
+    background-image: linear-gradient(to top, #000000a1, #0000007a);
+}
+.services_text {
+    padding: 50px 20px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, #00000000 0%, #000 110%);
+    text-align: right;
+    transition: .5s;
+    height: 53%;
+    border-radius: 10px; 
+}
+    </style>
+</head>
+
+<body>
+    <!-- header area start -->
+    <header class="header-style-one header--sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-style-one-wrapper">
+                        <div class="logo-area">
+                            <a href="index.html" class="logo">
+                                <img class="light" src="assets/images/logo/logo_light.png" width="150" height="150"
+                                    alt="logo">
+                                <img class="dark" src="assets/images/logo/logo_dark.png" width="140" height="180"
+                                    alt="logo">
+                            </a>
+                        </div>
+                        <nav class="main-nav-area">
+                            <ul class="list-unstyled fluxi-desktop-menu">
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="#" class="fluxi-dropdown-main-element" id="main">الرئيسية</a>
+                                </li>
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="#about-us" class="fluxi-dropdown-main-element">من نحن</a>
+                                </li>
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="services.html" class="fluxi-dropdown-main-element">خدماتنا</a>
+                                </li>
+                                <li class="menu-item fluxi-has-dropdown">
+                                    <a href="#clients" class="fluxi-dropdown-main-element">عملائنا</a>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                        <div class="button-area-start">
+                            <a href="contact.html" class="rts-btn btn-primary-7">تواصل معنا</a>
+                            <div class="menu-btn" id="menu-btn">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="14" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect width="20" height="2" fill="#1F1F25"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- rts banner area start -->
+    <div class="rts-banner-area-7 rts-section-gap" style="height: 100vh; background: linear-gradient(rgba(33,33,34,0.4), rgba(33,33,34,0.8)),url('./assets/images/banner/2.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-3 col-12"></div> -->
+                <div class="col-lg-7 col-12 order-change d-flex align-items-center" style="height: 100vh;">
+                    <div class="banner-seven-left-content">
+                        <h1 class="title text-white mb-5">إبداع رقمى </h1>
+                        <p class="text-white">
+                            نقدم استراتيجيات تسويقية مبتكرة وحلول رقمية تساعدك في بناء هويتك وتعزيز وجودك على الإنترنت
+                            من خلال محتوى متميز يعكس إبداعك
+                        </p>
+                        <!-- <form action="contact.html">
+                            <button class="rts-btn btn-primary-7 mb-5">تواصل معنا</button>
+                        </form> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-12"></div> -->
+                <div class="col-lg-7">
+                    <div class="thumbnail-banner-seven">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- rts banner area end -->
+<div class="container" style="margin: 80px auto;">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- banrd area start -->
+            <div class="rts-brand-area-seven" id="our-partners">
+                <p>شركاء النجاح</p>
+                <div class="brand-area-style-seven">
+                    <div class="brand-slider-area">
+                        <div class="swiper rts-brandSlider-2">
+                            <div class="swiper-wrapper">
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-01.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-02.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-03.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-04.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-05.png" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-06.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                                <!--brand-->
+                                <div class="swiper-slide">
+                                    <div class="brand-inner">
+                                        <a><img src="assets/images/brand/LogoPartner-07.svg" alt="brand"></a>
+                                    </div>
+                                </div>
+                                <!--end brand -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- banrd area end -->
+        </div>
+    </div>
+</div>
+    <!-- connecting people with brands -->
+    <div class="connecting-people-with-brand rts-section-gap2Bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="connection-people-area">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="connection-people-left">
+                                    <h2 class="title-main skew-up">نربط العلامات التجارية <br> بالجمهور</h2>
+                                    <p class="disc">
+                                        نخلق علاقات مؤثرة بين العلامات التجارية والفئات المستهدفة من خلال استراتيجيات
+                                        تسويقية مبتكرة.
+                                    </p>
+                                    <div class="row g-5">
+                                        <div class="col-lg-6">
+                                            <div class="single-about-small-cd">
+                                                <img src="assets/images/banner/dollar.png" width="70" height="60"
+                                                    alt="">
+                                                <h6 class="title">تعزيز هوية العلامة التجارية</h6>
+                                                <p class="disc">
+                                                    نطوّر هويات فريدة تعكس رؤيتك وتُميّزك عن المنافسين.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single-about-small-cd">
+                                                <img src="assets/images/banner/arrow.png" width="80" height="60" alt="">
+                                                <h6 class="title">زيادة التفاعل الرقمي</h6>
+                                                <p class="disc">
+                                                    نقدّم محتوى إبداعيًا يعزز حضورك الرقمي ويزيد تفاعل جمهورك.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="thumbnail-connection-area-right">
+                                    <img src="assets/images/banner/city.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connecting people with brands end -->
+
+    <!-- rts-service area start -->
+    <div class="rts-secrvice-area rts-section-gapBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" id="our-services">
+                    <div class="h2 title skew-up">نقدم حلولًا تصنع الفرق</div>
+                </div>
+            </div>
+
+            <!-- update -->
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide-content" style="background-image: url('./assets/images/services/strategic.png');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-text">
+                            <h2> التخطيط الاستراتيجى</h2>
+                            <p>
+                                نُصمّم استراتيجيات تفصيلية تواكب أهدافك وتوجّهك بدقة نحو النجاح. ندير المنهجيات
+                                الاتصالية باحترافية ونقدّم حلولاً تضمن تحقيق النتائج المرجوة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-content" style="background-image: url('./assets/images/services/marketing.png');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-text">
+                            <h2>التسويق</h2>
+                            <p>
+                                نعمل على إعداد الحملات التسويقية، لتميزنا وقربنا المباشر مع صانعي المحتوى بالإضافة إلى
+                                خبرتنا في الوصول الرقمي على جميع المنصات والقنوات الإعلامية.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-content" style="background-image: url('./assets/images/services/creative.png');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-text">
+                            <h2>المحتوى الابداعى</h2>
+                            <p>
+                                نقدّم خطط محتوى تسويقي إبداعية تعكس هوية علامتك وتضمن حضورك الرقمي الفعّال على مختلف
+                                المنصات. ونتابع تنفيذ المحتوى منذ مرحلة بناءه وحتى تنفيذه.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="custom-pagination"></ul>
+            </div>
+
+            <!--  -->
+        </div>
+    </div>
+    </div>
+    <!-- rts-service area end -->
+
+    <div class="providing-service-area-start-seven gradient-7-radious rts-section-gap">
+        <div class="container-2">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="image-area-service-1 area-3">
+                        <a href="#" class="thumbnail-service-1">
+                            <img src="assets/images/banner/rise.jpg" alt="service-area">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pl--120 pl_md--20 pl_sm--20">
+                    <!-- service contant wrapper main one -->
+                    <div class="service-content-style-one">
+                        <h3 class="title skew-up">زيادة المبيعات <br>
+                            ونمو الدخل</h3>
+                        <p class="disc">
+                            نستخدم استراتيجيات تسويقية ذكية، تشمل كتابة محتوى عالي الجودة بالكلمات المفتاحية المناسبة،
+                            وإضافة بيانات وصفية فعالة وتحسين الصور لتعزيز ظهورك في محركات البحث.
+                        </p>
+                    </div>
+                    <!-- service contant wrapper main one end -->
+                </div>
+            </div>
+            <div class="row g-5 align-items-center mt--50">
+                <div class="col-lg-6 order-change">
+                    <!-- service contant wrapper main one -->
+                    <div class="service-content-style-one last">
+                        <h3 class="title skew-up">رفع عدد الزيارات <br>
+                            وتعزيز التفاعل الاجتماعي</h3>
+                        <p class="disc">
+                            نساعدك على توجيه المزيد من الزوار إلى موقعك من خلال روابط خارجية مدروسة، مثل البيانات
+                            الصحفية، والمدونات المستضافة، والإعلانات المدفوعة في محركات البحث.
+                        </p>
+                    </div>
+                    <!-- service contant wrapper main one end -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-area-service-1 area-3">
+                        <a class="thumbnail-service-1">
+                            <img src="assets/images/banner/likes.png" alt="service-area">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 align-items-center mt--50">
+                <div class="col-lg-6">
+                    <div class="image-area-service-1 area-3">
+                        <a href="#" class="thumbnail-service-1">
+                            <img src="assets/images/banner/shutterstock_2051802836.jpg" alt="service-area">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pl--120 pl_md--20 pl_sm--20">
+                    <!-- service contant wrapper main one -->
+                    <div class="service-content-style-one">
+                        <h3 class="title skew-up">تحسين محركات البحث <br>
+                            ونمو الدخل</h3>
+                        <p class="disc">
+                            نعمل على تحسين ترتيب موقعك فى نتائج محركات البحث من خلال استراتيجيات SEO المتقدمة مما يضمن زيادة الظهور لموقعك فى محركات البحث وجذب المزيد من الزوار المستهدفين بتحليل دقيق للكلمات الدلالية المرتبطة بنشاطك 
+                        </p>
+                    </div>
+                    <!-- service contant wrapper main one end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- counter up section start -->
+    <div class="rts-counterup-section rts-section-gap2Top rts-section-gapBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="counter-up-7-left">
+                        <h2 class="title skew-up" id="about-us">من نحن؟</h2>
+                        <p class="disc">
+                            مجتمع المبدعين هو المكان الذي تلتقي فيه الأفكار المبتكرة <br> مع الاستراتيجيات التسويقية
+                            المتقدمة. نحن فريق من المحترفين المبدعين المتخصصين في تقديم حلول تسويقية استثنائية تساعد
+                            العلامات التجارية على التميز والنمو في عالم رقمي متسارع. <br> تميزنا في إبداع الأفكار وقوة
+                            التنفيذ، ونسعى دائمًا لتقديم <br> نتائج ملموسة تساهم في زيادة الوعي بعلامتك التجارية <br>
+                            وتوسيع نطاق تأثيرك <br> <strong>دعنا نكن جزءًا من قصتك ونقودك نحو النجاح!
+                        </p> </strong>
+                    </div>
+                </div>
+                <div class="offset-1 col-lg-6 ml_md--0 ml_sm--0">
+                    <div class="row g-48">
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb--48">
+                            <!-- single counter up area start -->
+                            <div class="single-counter-up-style-7">
+                                <p>مشاهدات</p>
+                                <h3 class="title"><span class="counter">1.5</span>مليار </h3>
+                            </div>
+                            <!-- single counter up area end -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb--48">
+                            <!-- single counter up area start -->
+                            <div class="single-counter-up-style-7">
+                                <p>صناع محتوى</p>
+                                <h3 class="title"><span class="counter">500</span>+</h3>
+                            </div>
+                            <!-- single counter up area end -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- single counter up area start -->
+                            <div class="single-counter-up-style-7">
+                                <p>شركاء نجاح</p>
+                                <h3 class="title"><span class="counter">100</span>+</h3>
+                            </div>
+                            <!-- single counter up area end -->
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- single counter up area start -->
+                            <div class="single-counter-up-style-7">
+                                <p>سنة التأسيس</p>
+                                <h3 class="title"><span class="counter">2024</span></h3>
+                            </div>
+                            <!-- single counter up area end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter up section end -->
+    <!-- vision area start -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="all">
+                    <img src="./assets/images/vision/vision1.jpg"
+                        alt="no-image">
+                    <div class="d-flex flex-column pb-30 services_text" style="width: 100%">
+                        <h2 class="text-white">رؤيتنا</h2>
+                        <p class="text-white lh-lg">
+                            أن نصبح الرواد في مجال التسويق الرقمي في منطقتنا، من خلال تقديم حلول تسويقية مبتكرة تساهم في نمو ونجاح عملائنا وتحقيق نتائج استثنائية لهم
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="all">
+                    <img src="./assets/images/vision/mission1.jpg"
+                        alt="no-image">
+                    <div class="d-flex flex-column pb-30 services_text" style="width: 100%">
+                        <h2 class="text-white">هدفنا</h2>
+                        <p class="text-white lh-lg">
+                            تمكين العلامات التجارية من الوصول إلى جمهورها المستهدف بطرق مبتكرة، وزيادة تاثيرها في السوق من خلال استراتيجيات تسويقية مبتكرةونتائج ملموسة
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="all">
+                    <img src="./assets/images/vision/value.jpg"
+                        alt="no-image">
+                    <div class="d-flex flex-column pb-30 services_text" style="width: 100%">
+                        <h2 class="text-white">قيمنا</h2>
+                        <p class="text-white lh-lg">
+                            نؤمن بالإبتكار، الشفافية والتعاون كقيم أساسية في عملنا. نحن نلتزم بتقديم حلول تسويقية مبدعة وفعّالة، مع التركيز على الجودة والمصداقية في كل خطوة
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- vision area end -->
+    <!--team area start-->
+    <div class="expart-team-area-7 rts-section-gapTop rts-section-gap2Bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-style-one-center" id="creatives">
+                        <h2 class="title skew-up">صناع المحتوى المبدعون</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-48 mt--10">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/VWAR.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">VWAR</h6>
+                        </a>
+                        <span class="designation">1.7M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/D7MAN.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">D7MAN</h6>
+                        </a>
+                        <span class="designation">250K</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/SHD5.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">SHD5</h6>
+                        </a>
+                        <span class="designation">1.4M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/DZZ.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">DZZ</h6>
+                        </a>
+                        <span class="designation">3.3M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!--WhatsApp icon-->
+                    <a href="https://wa.me/966545747785" class="whatsapp-float" target="_blank">
+                        <img src="assets/images/whatsapp.png" alt="whatsApp">
+                    </a>
+
+                    <!--end-->
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/D.KHALID.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">D.KHALID</h6>
+                        </a>
+                        <span class="designation">1.2M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/Mn8ar.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">Mn8ar</h6>
+                        </a>
+                        <span class="designation">2.8M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/MOSH3FL.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">MOSH3FL</h6>
+                        </a>
+                        <span class="designation">1.1M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <!-- single team area start -->
+                    <div class="single-team-area-7">
+                        <a class="thumbnail">
+                            <img src="assets/images/team/FAHDFO.png" alt="team">
+                        </a>
+                        <a>
+                            <h6 class="title">FAHDFO</h6>
+                        </a>
+                        <span class="designation">1.3M</span>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav justify-content-center social">
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-snapchat"></i></a></li>
+                                    <li class="nav-item mx-1"><a><i class="fa-brands fa-tiktok"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single team area end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--team area end-->
+
+    <!-- rts call to action area start -->
+    <div class="rts-call-to-action rts-section-gap2Bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-area-7">
+                        <h2 class="title skew-up">نرتقي بك إلى آفاق جديدة <br>
+                            في وقت قياسي</h2>
+                        <p class="disc">بفريق متخصص يجمع بين الإبداع والإستراتيجية <br> لتحقيق نتائج استثنائية</p>
+                        <div class="shape-area">
+                            <img src="assets/images/banner/circle.png" class="one">
+                            <img src="assets/images/banner/02.png" class="two">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts call to action area end -->
+
+    <!--clients area start-->
+    <div class="container">
+        <h2 class="title skew-up" id="clients">علامات اختارت العمل معنا</h2>
+        <div class="clients-container">
+            <div class="clients-row">
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/andalusia.png" alt="Ahrefs">
+                        <div class="details">• تقديم البروتوكول اللازم لزيارة كبار الشخصيات <br> • الإنتاج الفني <br> •
+                            تصميم وطباعة الأعلام الخاصة بالفعالية <br> • الإشراف الكامل على الفريق التنظيمي</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/benq.png" alt="Microsoft">
+                        <div class="details">• إدارة حملات إعلانية للعلامة التجارية <br> • إدارة التسويق للعلامة
+                            التجارية <br> • تصوير إعلاني للبراند</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/club2.png" alt="Amazon">
+                        <div class="details">• تغطية إعلامية <br> • إدارة حملة إعلانية مع مشاهير السوشال ميديا</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/dallah.png" alt="Notion">
+                        <div class="details">إدارة حملة إعلانية مع المشاهير</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/geniuses.png" alt="LinkedIn">
+                        <div class="details">إدارة حملة إعلانية مع المشاهير</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clients-row">
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/lg.png" alt="Circle">
+                        <div class="details">• إدارة حملات إعلانية مع المشاهير <br> • تصوير إعلاني للبراند</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/LogoPartner-07.svg" alt="Help Scout">
+                        <div class="details">• إدارة الحملات الإعلانية مع المشاهير <br> • تصوير إعلانات وبثها</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/player.png" alt="Jotform">
+                        <div class="details">• إدارة حملات إعلانية والترويج عبر منصات السوشال ميديا والبث المباشر <br> •
+                            تصوير إعلاني للبراند</div>
+                    </div>
+                </div>
+                <div class="client" onmouseover="toggleDetails(this, true)" onmouseout="toggleDetails(this, false)">
+                    <div class="client-box">
+                        <img src="assets/images/brand/vox.png" alt="Slack">
+                        <div class="details">• ترتيبات العرض الأول على شرف حضور القنصل الكوري لدعم عروض الأفلام الكورية
+                            في المملكة <br> • حملة إعلانية للترويج عن الحدث</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--clients area end-->
+
+    <!-- rts footera rea start -->
+    <div class="rts-footer-area-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-wrapper-7">
+                        <div class="innerr">
+                            <h2 class="title skew-up">يسعدنا مساعدتك</h2>
+                            <p>فريقنا جاهز لدعمك وتقديم أفضل الحلول لك.</p>
+                            <a href="contact.html" class="rts-btn btn-primary-4-border arrow-rotate">تواصل معنا الآن <i
+                                    class="fa-light fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>معلومات التواصل</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> جدة - حي الخالدية شارع سعود الفيصل <br> مركز الروشة الدور
+                        الثاني </p>
+                    <p><i class="fas fa-phone"></i> 0545747785</p>
+                    <p><i class="fas fa-envelope"></i> coc@creativesgroup.net</p>
+                </div>
+                <div class="quick-links">
+                    <h3>الوصول السريع</h3>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#about-us">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="privacy-policy.html#our-quality">سياسة الجودة</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <div class="logo-area">
+                        <img class="light" src="assets/images/logo/logo_light.png" alt="المبدعين">
+                        <img class="dark" src="assets/images/logo/logo_dark.png" alt="المبدعين">
+                    </div>
+                    <p>نحيك الأفكار بخيوط الإبداع، لنرسم حضورًا رقميًا يلامس الواقع ويترك أثرًا لا يُنسى، حيث يلتقي
+                        الشغف بالرؤية ليصنع تجربة متفردة تروي حكايتك بأسلوب مختلف.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/creatives.coc"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@creatives.coc"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://x.com/creatives_coc"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">جميع الحقوق محفوظة لموقع المبدعين © 2024</p>
+        </div>
+    </footer>
+    <!-- rts footera rea end -->
+
+
+
+
+    <!-- side bar area  -->
+    <div id="side-bar" class="side-bar header-two">
+        <button class="close-icon-menu"><i class="fa-sharp fa-thin fa-xmark"></i></button>
+        <!-- mobile menu area start -->
+        <div class="mobile-menu-main">
+            <nav class="nav-main mainmenu-nav mt--30">
+                <ul class="mainmenu metismenu" id="mobile-menu-active">
+                    <li>
+                        <a href="#main" class="main">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" class="main">من نحن</a>
+                    </li>
+                    <li>
+                        <a href="#our-servises" class="main">خدماتنا</a>
+                    </li>
+                    <li>
+                        <a href="#clients" class="main">عملائنا</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="main">تواصل معنا</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- mobile menu area end -->
+    </div>
+    <!-- side abr area end -->
+
+    <!-- pre loader start -->
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- pre loader end -->
+
+    <!-- THEME MODE SWITCHER -->
+    <div class="rts-switcher rts-theme-mode">
+        <div class="rts-darkmode">
+            <a id="rts-data-toggle" class="rts-dark-light">
+                <i class="rts-go-dark fal fa-moon"></i>
+                <i class="rts-go-light fa-light fa-sun-bright"></i>
+            </a>
+        </div>
+    </div>
+    <!-- THEME MODE SWITCHER END -->
+
+    <!-- progress area start -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+    <!-- progress area end -->
+
+
+
+    <!-- jquery js -->
+    <!-- <script defer src="assets/js/plugins/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+    <script defer src="assets/js/plugins/metismenu.js"></script>
+    <script defer src="assets/js/vendor/jqueryui.js"></script>
+    <script defer src="assets/js/vendor/waypoint.js"></script>
+    <script defer src="assets/js/plugins/swiper.js"></script>
+    <script defer src="assets/js/plugins/theia-sticky-sidebar.min.js"></script>
+    <script defer src="assets/js/plugins/gsap.min.js"></script>
+    <script defer src="assets/js/plugins/scrolltigger.js"></script>
+    <script defer src="assets/js/vendor/split-text.js"></script>
+    <script defer src="assets/js/vendor/split-type.js"></script>
+    <script defer src="assets/js/vendor/waw.js"></script>
+    <script defer src="assets/js/plugins/counter-up.js"></script>
+    <script defer src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- contact form js -->
+    <script defer src="assets/js/plugins/contact-form.js"></script>
+    <script defer src="assets/js/main.js"></script>
+
+
+    <script>
+        $(window).on('load', function () {
+            const $slider = $('.slider');
+
+            $slider.slick({
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                rtl: true
+            });
+
+            const totalSlides = $slider.slick('getSlick').slideCount;
+
+            for (let i = 0; i < totalSlides; i++) {
+                $('.custom-pagination').append(`<li><button data-slide="${i}">${i + 1}</button></li>`);
+            }
+
+            $('.custom-pagination li').eq(0).addClass('active');
+
+            $('.custom-pagination').on('click', 'button', function () {
+                const index = $(this).data('slide');
+                $slider.slick('slickGoTo', index);
+            });
+
+            $slider.on('afterChange', function (event, slick, currentSlide) {
+                $('.custom-pagination li').removeClass('active');
+                $('.custom-pagination li').eq(currentSlide).addClass('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

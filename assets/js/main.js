@@ -244,7 +244,7 @@
         // update
         $(document).ready(function(){ 
           var swiper = new Swiper(".rts-brandSlider-2", {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 30,
               loop: true,
               speed: 3000, // سرعة التنقل البطيئة
@@ -257,7 +257,7 @@
               allowTouchMove: false, // إيقاف التحكم اليدوي للمحافظة على الاستمرارية
               grabCursor: false,
               breakpoints: {
-                  1200: { slidesPerView: 4 },
+                  1200: { slidesPerView: 5 },
                   900:  { slidesPerView: 4 },
                   768:  { slidesPerView: 3 },
                   580:  { slidesPerView: 3 },

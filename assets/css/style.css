@@ -25281,11 +25281,11 @@ form i {
 }
 
 .services-list {
-  width: 40%;
+  /* width: 40%; */
   padding: 20px;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   border-left: 2px solid #f0f0f0;
-  height: 560px;
+  /* height: 560px; */
 }
 
 .services-list ul {
@@ -25312,7 +25312,7 @@ form i {
   font-weight: bold;
 }
 
-.service-details {
+/* .service-details {
   width: 60%;
   text-align: center;
   padding: 20px;
@@ -25320,15 +25320,15 @@ form i {
   min-width: 800px;
   max-width: 800px;
   padding-right: 100px;
-}
+} */
 
 .service-details img {
   width: 100%;
-  max-height: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   
 }
 
@@ -25348,7 +25348,7 @@ form i {
 .footer {
   background: var(--footer-color);
   padding: 40px 0;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 100px;
 }
 

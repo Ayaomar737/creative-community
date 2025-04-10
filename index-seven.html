@@ -25,110 +25,23 @@
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
 
     <style>
-        .slider-container {
-            position: relative;
-            max-width: 100%;
-            height: 500px;
-            overflow: hidden;
-        }
-
-        .slider {
-            height: 500px;
-        }
-
-        .slide-content {
-            height: 500px;
-            background-size: cover;
-            background-position: center;
-            display: flex !important;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 0 80px;
-            position: relative;
-        }
-
-        .slide-overlay {
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
-            z-index: 1;
-        }
-
-        .slide-text {
-            position: relative;
-            z-index: 2;
-            max-width: 500px;
-            text-align: right;
-        }
-
-        .slide-text h2,
-        .slide-text p {
-            color: black;
-        }
-
-        .custom-pagination {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 3;
-        }
-
-        .custom-pagination li {
-            list-style: none;
-        }
-
-        .custom-pagination li button {
-            width: 40px;
-            height: 40px;
-            border: 2px solid white;
-            background: transparent;
-            color: white;
-            font-weight: bold;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .custom-pagination li.active button {
-            background: white;
-            color: black;
-        }
-
-        
-.all {
-    position: relative;
-    transition: .5s;
-    border-radius: 8px;
-    height: 100%;
-    background-color: #fff;
-}
-
-.all img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.all:hover .services_text {
-    height: 100%;
-    background-image: linear-gradient(to top, #000000a1, #0000007a);
-}
-.services_text {
-    padding: 50px 20px;
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(to bottom, #00000000 0%, #000 110%);
-    text-align: right;
-    transition: .5s;
-    height: 53%;
-    border-radius: 10px; 
-}
+       .main-nav-area ul.fluxi-desktop-menu .menu-item .fluxi-dropdown-main-element{
+        color: white;
+       }
+       .header--sticky.sticky{
+        background-color: #052b83;
+       }
+       .rts-btn.btn-primary-7{
+        background-color: white;
+        color: #052b83;
+       }
+       .rts-btn.btn-primary-7:hover{
+        background-color: white !important;
+        color: #052b83;
+       }
+       .rts-btn.btn-primary-7::after{
+        background-color: white;
+       }
     </style>
 </head>
 
@@ -141,7 +54,7 @@
                     <div class="header-style-one-wrapper">
                         <div class="logo-area">
                             <a href="index.html" class="logo">
-                                <img class="light" src="assets/images/logo/logo_light.png" width="100" height="100"
+                                <img class="light" src="assets/images/logo/logo_dark.png" width="100" height="100"
                                     alt="logo">
                                 <img class="dark" src="assets/images/logo/logo_dark.png" width="100" height="100"
                                     alt="logo">
@@ -167,12 +80,12 @@
                         </nav>
                         <div class="button-area-start">
                             <a href="contact.html" class="rts-btn btn-primary-7">تواصل معنا</a>
-                            <div class="menu-btn" id="menu-btn">
+                            <div class="menu-btn text-white" id="menu-btn">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <rect y="14" width="20" height="2" fill="#1F1F25"></rect>
-                                    <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
-                                    <rect width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect y="14" width="20" height="2" fill="white"></rect>
+                                    <rect y="7" width="20" height="2" fill="white"></rect>
+                                    <rect width="20" height="2" fill="white"></rect>
                                 </svg>
                             </div>
                         </div>
@@ -184,26 +97,17 @@
     <!-- header area end -->
 
     <!-- rts banner area start -->
-    <div class="rts-banner-area-7 rts-section-gap" style="height: 100vh; background: linear-gradient(rgba(33,33,34,0.4), rgba(33,33,34,0.8)),url('./assets/images/banner/2.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <div class="rts-banner-area-7 rts-section-gap banner">
         <div class="container">
             <div class="row">
                 <!-- <div class="col-lg-3 col-12"></div> -->
-                <div class="col-lg-7 col-12 order-change d-flex align-items-center" style="height: 100vh;">
+                <div class="col-lg-7 col-12 order-change d-flex align-items-center">
                     <div class="banner-seven-left-content">
                         <h1 class="title text-white mb-5">إبداع رقمى </h1>
                         <p class="text-white">
                             نقدم استراتيجيات تسويقية مبتكرة وحلول رقمية تساعدك في بناء هويتك وتعزيز وجودك على الإنترنت
                             من خلال محتوى متميز يعكس إبداعك
                         </p>
-                        <!-- <form action="contact.html">
-                            <button class="rts-btn btn-primary-7 mb-5">تواصل معنا</button>
-                        </form> -->
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-12"></div> -->
-                <div class="col-lg-7">
-                    <div class="thumbnail-banner-seven">
-                        <img src="">
                     </div>
                 </div>
             </div>
@@ -894,7 +798,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
                     <div class="contact-info">
                         <h3>معلومات التواصل</h3>
                         <p><i class="fas fa-map-marker-alt"></i> جدة - حي الخالدية شارع سعود الفيصل <br> مركز الروشة الدور
@@ -903,7 +807,7 @@
                         <p><i class="fas fa-envelope"></i> coc@creativesgroup.net</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
                     <div class="quick-links">
                         <h3>الوصول السريع</h3>
                         <ul>
@@ -916,7 +820,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
                     <div class="about">
                         <div class="logo-area">
                             <img class="light" src="assets/images/logo/logo_light.png" alt="المبدعين">

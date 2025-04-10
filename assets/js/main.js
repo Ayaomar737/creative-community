@@ -261,9 +261,9 @@
                   900:  { slidesPerView: 4 },
                   768:  { slidesPerView: 3 },
                   580:  { slidesPerView: 3 },
-                  450:  { slidesPerView: 2 },
-                  320:  { slidesPerView: 1 },
-                  0:    { slidesPerView: 1 }
+                  450:  { slidesPerView: 3 },
+                  320:  { slidesPerView: 2 },
+                  0:    { slidesPerView: 2 }
               }
           });
       });
